@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+		>
+
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			filter="rules"
+			validate="rules"
+			component="com_catalogue"
+			section="component" />
+	</fieldset>
+	<fieldset name="advanced">
+		<field
+		       name="reviewsemail"
+		       type="text"
+		       label="COM_CATALOGUE_CONFIG_REVIEWSEMAIL_LABEL"
+		       description="COM_CATALOGUE_CONFIG_REVIEWSEMAIL_DESC"
+		       class="inputbox"
+		       component="com_reviews"
+		       section="component"
+		/>
+	</fieldset>
+
+	<fieldset name="REVIEW_FORM_OPTIONS">
+		<field
+		       name="review_form_header"
+		       type="text"
+		       label="COM_REVIEWS_CONFIG_REVIEW_FORM_HEADER_LABEL"
+		       description="COM_REVIEWS_CONFIG_REVIEW_FORM_HEADER_DESC"
+		       class="inputbox"
+		       component="com_reviews"
+		       section="component"
+		       default="Оставить отзыв"
+		/>
+
+		<field
+		       name="review_form_desc"
+		       type="text"
+		       label="COM_REVIEWS_CONFIG_REVIEW_FORM_DESC_LABEL"
+		       description="COM_REVIEWS_CONFIG_REVIEW_FORM_DESC_DESC"
+		       class="inputbox"
+		       component="com_reviews"
+		       section="component"
+		/>
+
+		<field
+		       name="review_form_showname"
+		       type="radio"
+		       label="COM_REVIEWS_CONFIG_REVIEW_FORM_SHOWNAME_LABEL"
+		       description="COM_REVIEWS_CONFIG_REVIEW_FORM_SHOWNAME_DESC"
+		       class="btn-group"
+		       component="com_reviews"
+		       section="component"
+		       default="2"
+		>
+			<option
+				value="0">JHIDE</option>
+			<option
+				value="1">JSHOW</option>
+			<option
+				value="2">JREQUIRED</option>
+		</field>
+
+		<field
+		       name="review_form_showorg"
+		       type="radio"
+		       label="COM_REVIEWS_CONFIG_REVIEW_FORM_SHOWORG_LABEL"
+		       description="COM_REVIEWS_CONFIG_REVIEW_FORM_SHOWORG_DESC"
+		       class="btn-group"
+		       component="com_reviews"
+		       section="component"
+		       default="0"
+		>
+			<option
+				value="0">JHIDE</option>
+			<option
+				value="1">JSHOW</option>
+			<option
+				value="2">JREQUIRED</option>
+		</field>
+
+		<field name="review_form_redirect"
+			type="menuitem"
+			label="COM_REVIEWS_CONFIG_REVIEW_FORM_REDIRECT_LABEL"
+			description="COM_REVIEWS_CONFIG_REVIEW_FORM_REDIRECT_DESC" />
+
+	</fieldset>
+</config>

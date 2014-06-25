@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.0.0" method="upgrade">
+ 
+	<name>com_reviews</name>
+	<creationDate>08.01.2012</creationDate>
+	<author>Saity74</author>
+	<authorEmail>info@saity74.ru</authorEmail>
+	<authorUrl>http://saity74.ru</authorUrl>
+	<copyright></copyright>
+	<license>GNU General Public License version 2 or later;</license>
+	<version>1.5.0</version>
+	<description>COM_REVIEWS_MANAGER</description>
+
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+
+	<administration>
+		<menu>Reviews</menu>
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>reviews.php</filename>
+			<filename>controller.php</filename>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>tables</folder>
+			<folder>sql</folder>
+		</files>
+		<languages folder="admin">
+			<language tag="ru-RU">language/ru-RU.com_reviews.ini</language>
+		</languages>
+	</administration>
+ 	<files>			
+		<filename>index.html</filename>
+		<filename>reviews.php</filename>
+		<filename>com_reviews.xml</filename>
+		<filename>controller.php</filename>
+		<folder>models</folder>
+		<folder>views</folder>
+		<folder>controllers</folder>
+	</files>
+</extension>
