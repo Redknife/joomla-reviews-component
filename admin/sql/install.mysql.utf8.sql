@@ -5,7 +5,6 @@ CREATE TABLE IF NOT EXISTS `#__reviews` (
   `fio` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `organization` varchar(255) NOT NULL,
-  `rate` tinyint(5) NOT NULL,
   `phone` varchar(50) NOT NULL,
   `text` text NOT NULL,
   `answer` text,

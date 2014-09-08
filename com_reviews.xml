@@ -39,7 +39,6 @@
 		</files>
 		<languages folder="admin">
 			<language tag="ru-RU">language/ru-RU.com_reviews.ini</language>
-			<language tag="ru-RU">language/ru-RU.com_reviews.sys.ini</language>
 		</languages>
 	</administration>
  	<files>			
